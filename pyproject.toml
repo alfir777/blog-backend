@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "blog-backend"
+version = "0.1.0"
+description = "Blog - Backend on FastAPI"
+authors = ["Alfir Tyakin <alfir7777@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+sqlalchemy = "^2.0.25"
+fastapi = {extras = ["all"], version = "^0.109.2"}
+pyjwt = "^2.8.0"
+alembic = "^1.13.1"
+asyncpg = "^0.29.0"
+psycopg2-binary = "^2.9.9"
+bcrypt = "4.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.0.0"
+flake8-import-order = "^0.18.2"
+flake8-comprehensions = "^3.14.0"
+flake8-print = "^5.0.0"
+flake8-bugbear = "^24.4.26"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
